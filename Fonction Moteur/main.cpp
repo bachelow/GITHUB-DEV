@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main () {
+int main(){
     Motor m1(SERVOS);
 	cout << "speed : " << m1.getSpeed() << endl; //0
     cout << "dir : " << m1.getDir() << endl; //LEFT

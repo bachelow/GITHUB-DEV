@@ -1,3 +1,6 @@
+#ifndef __MOTOR__HPP__
+#define __MOTOR__HPP__
+
 typedef enum{LEFT,RIGHT} Direct_t;
 typedef enum{STEPPERS, SERVOS} Moteur_t;
 
@@ -20,3 +23,5 @@ class Motor{
         float getAngle();
         void setAngle(float);
 };
+
+#endif

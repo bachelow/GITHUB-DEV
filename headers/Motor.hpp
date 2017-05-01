@@ -22,6 +22,7 @@ class Motor{
         void setDir(Direct_t);
         float getAngle();
         void setAngle(float);
+        void tourner(ID, side, speed);
 };
 
 #endif

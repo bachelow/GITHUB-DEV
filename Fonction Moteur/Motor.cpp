@@ -33,3 +33,7 @@ float Motor::getAngle() {
 void Motor::setAngle(float angle) {
     this->angle = angle;
 }
+
+void Motor::tourner(int ID, Direct_t side, int speed){
+	
+}

@@ -1,7 +1,7 @@
 #include "../headers/Motor.hpp"
 
-//constructeur qui permet de construire des objets avec 0, 1, 2, 3 ou 4 arguments selon les besoins. 
-Motor::Motor(Moteur_t type, Direct_t direction, int speed, float angle) : type{ type }, direction{ direction }, speed{ speed }, angle{angle}
+//constructeur qui permet de construire des objets avec 0, 1, 2, 3 ou 4 arguments selon les besoins.
+Motor::Motor(Moteur_t type, Direct_t direction, int speed, float angle, std::string name) : type{ type }, direction{ direction }, speed{ speed }, angle{angle}, name{name}
 {
 
 }
@@ -35,5 +35,19 @@ void Motor::setAngle(float angle) {
 }
 
 void Motor::tourner(int ID, Direct_t side, int speed){
-	
+
+}
+
+void Motor::setName(std::string name){
+    this->name = name;
+}
+
+std::string Motor::getName(){
+    return this->name;
+}
+void Motor::setType(Moteur_t type){
+    this->type = type;
+}
+Moteur_t Motor::getType(){
+    return this->type;
 }

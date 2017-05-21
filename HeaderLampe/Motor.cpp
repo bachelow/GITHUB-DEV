@@ -1,4 +1,4 @@
-#include "../headers/Motor.h"
+#include "Motor.h"
 #include <Arduino.h>
 
 //constructeur qui permet de construire des objets avec 0, 1, 2, 3 ou 4 arguments selon les besoins.
